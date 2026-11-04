@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" fill="none">
+  <rect width="800" height="500" rx="16" fill="#090d16"/>
+  <!-- Structure -->
+  <rect x="120" y="80" width="560" height="340" rx="12" fill="#17233d" stroke="#334873" stroke-width="3"/>
+  <!-- Hydraulic side columns -->
+  <rect x="150" y="110" width="80" height="280" rx="6" fill="#0c1322" stroke="#233354" stroke-width="2"/>
+  <rect x="570" y="110" width="80" height="280" rx="6" fill="#0c1322" stroke="#233354" stroke-width="2"/>
+  <!-- Hydraulic cylinders top -->
+  <rect x="170" y="70" width="40" height="60" rx="4" fill="#f59e0b"/>
+  <rect x="590" y="70" width="40" height="60" rx="4" fill="#f59e0b"/>
+  <!-- Upper movable beam (ram) -->
+  <rect x="230" y="140" width="340" height="90" fill="#334155" stroke="#475569" stroke-width="2"/>
+  <!-- Upper punch punch tooling -->
+  <polygon points="250,230 550,230 540,265 260,265" fill="#94a3b8" stroke="#cbd5e1" stroke-width="1.5"/>
+  <!-- Bent metal sheet in die -->
+  <path d="M220 280 L400 270 L580 280" stroke="#f59e0b" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Lower multi-V die and bed -->
+  <polygon points="250,274 550,274 560,320 240,320" fill="#475569" stroke="#64748b" stroke-width="2"/>
+  <rect x="230" y="320" width="340" height="60" fill="#1e293b"/>
+  <!-- CNC Graphic Controller -->
+  <rect x="660" y="160" width="100" height="120" rx="6" fill="#0f172a" stroke="#0284c7" stroke-width="2"/>
+  <rect x="670" y="175" width="80" height="50" rx="3" fill="#0284c7" fill-opacity="0.2"/>
+  <text x="675" y="195" font-family="monospace" font-size="8" fill="#38bdf8">DELEM CNC</text>
+  <text x="675" y="212" font-family="monospace" font-size="8" fill="#10b981">ANGLE: 90.00°</text>
+  <!-- Badges -->
+  <rect x="40" y="30" width="230" height="50" rx="6" fill="#070b14" stroke="#f59e0b" stroke-width="1.5"/>
+  <text x="55" y="52" font-family="'Inter', sans-serif" font-weight="700" font-size="13" fill="#ffffff">ЧПУ Пресс 2200 кН (220т)</text>
+  <text x="55" y="68" font-family="'Inter', sans-serif" font-size="11" fill="#f59e0b">Длина гиба до 4000 мм | Угол 0.01°</text>
+</svg>

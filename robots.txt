@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://uralgib.ru/sitemap.xml
+Host: https://uralgib.ru

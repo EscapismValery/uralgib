@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 64" fill="none" class="w-full h-auto">
+  <defs>
+    <linearGradient id="logo-amber" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fbbf24"/>
+      <stop offset="100%" stop-color="#d97706"/>
+    </linearGradient>
+    <linearGradient id="logo-steel" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#0284c7"/>
+    </linearGradient>
+  </defs>
+  <!-- Industrial Laser / Bending Torch Icon -->
+  <g transform="translate(6, 6)">
+    <rect x="0" y="0" width="52" height="52" rx="10" fill="#0c1322" stroke="#233354" stroke-width="2"/>
+    <!-- Laser beam and nozzle -->
+    <path d="M26 8 L32 20 L20 20 Z" fill="url(#logo-steel)"/>
+    <rect x="24" y="20" width="4" height="6" fill="#94a3b8"/>
+    <!-- Laser spark -->
+    <circle cx="26" cy="30" r="3.5" fill="url(#logo-amber)"/>
+    <path d="M26 26 L26 34 M22 30 L30 30" stroke="#fbbf24" stroke-width="2" stroke-linecap="round"/>
+    <!-- Bent metal sheet profile -->
+    <path d="M10 40 L26 31 L42 40" stroke="url(#logo-amber)" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="26" cy="31" r="1.5" fill="#ffffff"/>
+  </g>
+  <!-- Text Brand -->
+  <text x="70" y="32" font-family="'Inter', sans-serif" font-weight="900" font-size="24" fill="#ffffff" letter-spacing="1.5">УРАЛГИБ</text>
+  <text x="70" y="48" font-family="'Inter', sans-serif" font-weight="600" font-size="10.5" fill="#f59e0b" letter-spacing="2.2">ЗАВОД МЕТАЛЛООБРАБОТКИ</text>
+</svg>

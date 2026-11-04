@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 70" fill="none">
+  <rect width="240" height="70" rx="8" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.5"/>
+  <!-- HKA / UMMC Cable Core Emblem -->
+  <g transform="translate(16, 13)">
+    <rect x="0" y="0" width="44" height="44" rx="6" fill="#003B71"/>
+    <!-- Cable section circular cores -->
+    <circle cx="22" cy="22" r="14" stroke="#ffffff" stroke-width="2.5" fill="none"/>
+    <circle cx="22" cy="15" r="4.5" fill="#D97706"/>
+    <circle cx="16" cy="26" r="4.5" fill="#D97706"/>
+    <circle cx="28" cy="26" r="4.5" fill="#D97706"/>
+    <circle cx="22" cy="22" r="2" fill="#ffffff"/>
+  </g>
+  <text x="70" y="34" font-family="'Inter', -apple-system, sans-serif" font-weight="900" font-size="17" fill="#003B71" letter-spacing="1.2">УРАЛКАБЕЛЬ</text>
+  <text x="70" y="48" font-family="'Inter', -apple-system, sans-serif" font-weight="600" font-size="7.5" fill="#64748B" letter-spacing="0.5">ХОЛДИНГ КАБЕЛЬНЫЙ АЛЬЯНС УГМК</text>
+</svg>

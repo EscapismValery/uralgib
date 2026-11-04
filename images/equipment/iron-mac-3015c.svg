@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" fill="none">
+  <defs>
+    <linearGradient id="im-bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#090d16"/>
+    </linearGradient>
+    <linearGradient id="im-laser" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="50%" stop-color="#fbbf24"/>
+      <stop offset="100%" stop-color="#f59e0b"/>
+    </linearGradient>
+    <radialGradient id="im-glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#fbbf24" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#f59e0b" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="800" height="500" rx="16" fill="url(#im-bg)"/>
+  <!-- Grid background -->
+  <path d="M50 0 V500 M100 0 V500 M150 0 V500 M200 0 V500 M250 0 V500 M300 0 V500 M350 0 V500 M400 0 V500 M450 0 V500 M500 0 V500 M550 0 V500 M600 0 V500 M650 0 V500 M700 0 V500 M750 0 V500" stroke="#1e293b" stroke-width="0.5"/>
+  <path d="M0 50 H800 M0 100 H800 M0 150 H800 M0 200 H800 M0 250 H800 M0 300 H800 M0 350 H800 M0 400 H800 M0 450 H800" stroke="#1e293b" stroke-width="0.5"/>
+  
+  <!-- Machine Base Frame -->
+  <rect x="100" y="240" width="600" height="170" rx="8" fill="#1e293b" stroke="#334155" stroke-width="2"/>
+  <rect x="120" y="260" width="560" height="20" fill="#0f172a"/>
+  
+  <!-- Slat table (coordinate table 3000x1500) -->
+  <g stroke="#475569" stroke-width="2">
+    <path d="M130 250 L140 265 M150 250 L160 265 M170 250 L180 265 M190 250 L200 265 M210 250 L220 265 M230 250 L240 265 M250 250 L260 265 M270 250 L280 265 M290 250 L300 265 M310 250 L320 265 M330 250 L340 265 M350 250 L360 265 M370 250 L380 265 M390 250 L400 265 M410 250 L420 265 M430 250 L440 265 M450 250 L460 265 M470 250 L480 265 M490 250 L500 265 M510 250 L520 265 M530 250 L540 265 M550 250 L560 265 M570 250 L580 265 M590 250 L600 265 M610 250 L620 265 M630 250 L640 265 M650 250 L660 265 M670 250 L680 265"/>
+  </g>
+  
+  <!-- Metal Sheet on Table -->
+  <rect x="140" y="245" width="520" height="8" rx="2" fill="#64748b" stroke="#94a3b8" stroke-width="1"/>
+  
+  <!-- Gantry Bridge (Portal) -->
+  <rect x="360" y="110" width="80" height="150" rx="6" fill="#334155" stroke="#475569" stroke-width="2"/>
+  <rect x="380" y="125" width="40" height="70" rx="4" fill="#0f172a" stroke="#0284c7" stroke-width="1.5"/>
+  
+  <!-- Laser Optical Cutting Head -->
+  <rect x="392" y="180" width="16" height="45" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1"/>
+  <polygon points="392,225 408,225 403,243 397,243" fill="#d97706"/>
+  
+  <!-- Laser Beam -->
+  <line x1="400" y1="243" x2="400" y2="249" stroke="url(#im-laser)" stroke-width="3"/>
+  <circle cx="400" cy="249" r="24" fill="url(#im-glow)"/>
+  
+  <!-- Laser Sparks -->
+  <g stroke="#fbbf24" stroke-width="1.5" stroke-linecap="round">
+    <line x1="400" y1="249" x2="380" y2="235"/>
+    <line x1="400" y1="249" x2="370" y2="248"/>
+    <line x1="400" y1="249" x2="385" y2="260"/>
+    <line x1="400" y1="249" x2="420" y2="236"/>
+    <line x1="400" y1="249" x2="430" y2="250"/>
+    <line x1="400" y1="249" x2="415" y2="262"/>
+    <circle cx="375" cy="232" r="1.5" fill="#ffffff"/>
+    <circle cx="425" cy="230" r="1.5" fill="#ffffff"/>
+  </g>
+  
+  <!-- Operator CNC Console -->
+  <rect x="710" y="200" width="45" height="120" rx="4" fill="#1e293b" stroke="#0284c7" stroke-width="2"/>
+  <rect x="716" y="215" width="33" height="40" fill="#0284c7" fill-opacity="0.3"/>
+  <text x="720" y="235" font-family="monospace" font-size="7" fill="#38bdf8">CNC 6kW</text>
+  <text x="720" y="247" font-family="monospace" font-size="6" fill="#10b981">ONLINE</text>
+  
+  <!-- Badges and specs overlays -->
+  <rect x="40" y="40" width="220" height="60" rx="8" fill="#0c1322" fill-opacity="0.9" stroke="#f59e0b" stroke-width="1.5"/>
+  <text x="56" y="65" font-family="'Inter', sans-serif" font-weight="700" font-size="14" fill="#ffffff">IRON MAC 3015C</text>
+  <text x="56" y="85" font-family="'Inter', sans-serif" font-size="12" fill="#fbbf24">Оптоволокно 6000 Вт | Стол 3×1.5 м</text>
+  
+  <rect x="540" y="40" width="220" height="60" rx="8" fill="#0c1322" fill-opacity="0.9" stroke="#0284c7" stroke-width="1.5"/>
+  <text x="556" y="65" font-family="'Inter', sans-serif" font-weight="700" font-size="13" fill="#ffffff">Точность позиц.: 0.05 мм</text>
+  <text x="556" y="85" font-family="'Inter', sans-serif" font-size="12" fill="#38bdf8">Сталь до 25мм | Нерж. до 16мм</text>
+</svg>

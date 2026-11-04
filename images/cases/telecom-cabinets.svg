@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 450" fill="none">
+    <rect width="700" height="450" rx="14" fill="#070b14"/>
+    <rect x="25" y="25" width="650" height="400" rx="10" fill="#111b30" stroke="#233354" stroke-width="2"/>
+    
+    <!-- Isometric Wireframe / 3D Model representation -->
+    <g transform="translate(100, 60)">
+      <polygon points="100,40 400,40 500,120 200,120" fill="#1e293b" stroke="#0284c7" stroke-width="2"/>
+      <polygon points="100,40 200,120 200,240 100,160" fill="#0f172a" stroke="#0284c7" stroke-width="2"/>
+      <polygon points="200,120 500,120 500,240 200,240" fill="#17233d" stroke="#f59e0b" stroke-width="2"/>
+      <!-- Grid trusses -->
+      <line x1="200" y1="120" x2="350" y2="240" stroke="#38bdf8" stroke-width="1.5"/>
+      <line x1="350" y1="120" x2="500" y2="240" stroke="#38bdf8" stroke-width="1.5"/>
+      <line x1="350" y1="120" x2="200" y2="240" stroke="#38bdf8" stroke-width="1.5"/>
+      <line x1="500" y1="120" x2="350" y2="240" stroke="#38bdf8" stroke-width="1.5"/>
+    </g>
+    
+    <!-- Info Overlay Box -->
+    <rect x="45" y="320" width="610" height="90" rx="8" fill="#0c1322" fill-opacity="0.95" stroke="#f59e0b" stroke-width="1.5"/>
+    <text x="65" y="352" font-family="'Inter', sans-serif" font-weight="700" font-size="17" fill="#ffffff">Шкафы 42U для ПАО МОТИВ</text>
+    <text x="65" y="380" font-family="'Inter', sans-serif" font-size="13" fill="#cbd5e1">Локация: <tspan fill="#f59e0b" font-weight="600">г. Екатеринбург</tspan> | Объем: <tspan fill="#38bdf8" font-weight="600">Серия 450 шт.</tspan></text>
+    <rect x="520" y="340" width="115" height="34" rx="4" fill="#f59e0b"/>
+    <text x="532" y="362" font-family="'Inter', sans-serif" font-weight="700" font-size="11" fill="#090d16">ВЫПОЛНЕНО</text>
+  </svg>

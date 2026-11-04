@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 70" fill="none">
+  <rect width="240" height="70" rx="8" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.5"/>
+  <!-- MOTIV Official Emblem: Orange circle with 3 convergent arrows -->
+  <g transform="translate(16, 12)">
+    <circle cx="23" cy="23" r="21" fill="#FF5C00"/>
+    <!-- 3 converging arrows at 120 degrees -->
+    <path d="M23 8 L27 18 L23 16 L19 18 Z" fill="#ffffff"/>
+    <path d="M35 29 L26 23 L27 21 L34 23 Z" fill="#ffffff"/>
+    <path d="M11 29 L18 23 L19 21 L12 23 Z" fill="#ffffff"/>
+    <circle cx="23" cy="23" r="3.5" fill="#ffffff"/>
+  </g>
+  <!-- MOTIV Wordmark -->
+  <text x="68" y="36" font-family="'Inter', -apple-system, sans-serif" font-weight="900" font-size="22" fill="#FF5C00" letter-spacing="1.5">МОТИВ</text>
+  <text x="68" y="49" font-family="'Inter', -apple-system, sans-serif" font-weight="600" font-size="8.5" fill="#475569" letter-spacing="1">ТЕЛЕКОММУНИКАЦИИ</text>
+</svg>
