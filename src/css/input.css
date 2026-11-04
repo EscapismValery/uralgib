@@ -127,7 +127,22 @@ input[type=range]::-webkit-slider-runnable-track {
 
 /* iOS Safe Area for bottom fixed app bar */
 .safe-area-bottom {
-  padding-bottom: calc(0.5rem + env(safe-area-inset-bottom, 0px));
+  padding-bottom: calc(1rem + env(safe-area-inset-bottom, 0px));
 }
+
+/* Prevent iOS Safari auto-zoom on input focus by setting minimum 16px font-size */
+@media (max-width: 640px) {
+  input:not([type="checkbox"]):not([type="radio"]),
+  select,
+  textarea {
+    font-size: 16px !important;
+  }
+}
+
+.modal-container {
+  overflow-x: hidden;
+  -webkit-overflow-scrolling: touch;
+}
+
 
 

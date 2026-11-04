@@ -171,7 +171,7 @@ function renderHeader(data, relPrefix, currentUrl) {
           </a>
         </nav>
 
-        <!-- Right Side: Desktop CTA + Mobile Phone + Mobile Hamburger -->
+        <!-- Right Side: Desktop CTA + Mobile Hamburger -->
         <div class="flex items-center space-x-2 sm:space-x-3 flex-shrink-0">
           
           <!-- Desktop CTA Button (Hidden on Mobile < lg) -->
@@ -182,14 +182,7 @@ function renderHeader(data, relPrefix, currentUrl) {
             Рассчитать заказ
           </button>
 
-          <!-- Mobile Direct Call Icon (Visible on Mobile < lg) -->
-          <a href="tel:${c.phoneMainDigits}" class="lg:hidden w-10 h-10 rounded-xl bg-amber-50 hover:bg-amber-100 border border-amber-200 text-amber-700 flex items-center justify-center transition-colors active:scale-95 flex-shrink-0" aria-label="Позвонить в отдел продаж">
-            <svg class="w-5 h-5 text-amber-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
-            </svg>
-          </a>
-
-          <!-- Mobile Hamburger Toggle -->
+          <!-- Mobile Hamburger Toggle Only -->
           <button type="button" id="mobile-menu-btn" class="lg:hidden w-10 h-10 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-800 flex items-center justify-center focus:outline-none transition-colors active:scale-95 flex-shrink-0" aria-label="Открыть мобильное меню">
             <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>

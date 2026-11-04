@@ -358,8 +358,11 @@
       }
     }
 
-    const firstInput = modal.querySelector('input:not([type="hidden"])');
-    if (firstInput) firstInput.focus();
+    // Only autofocus on desktop to prevent mobile viewport zoom
+    if (window.innerWidth >= 1024) {
+      const firstInput = modal.querySelector('input:not([type="hidden"])');
+      if (firstInput) firstInput.focus();
+    }
   }
 
   function closeModal(modalId) {

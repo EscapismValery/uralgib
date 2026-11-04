@@ -7,33 +7,15 @@ function renderFloatingActions(data) {
 
   return `
   <!-- MOBILE BOTTOM APP BAR (Fixed at screen bottom on mobile < lg) -->
-  <div class="lg:hidden fixed bottom-0 left-0 right-0 z-40 bg-white/95 backdrop-blur-md border-t border-slate-200 px-3 py-2 shadow-2xl safe-area-bottom">
-    <div class="max-w-md mx-auto flex items-center space-x-2">
-      
-      <!-- Direct Call Button -->
-      <a href="tel:${c.phoneMainDigits}" class="w-12 h-12 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-800 flex flex-col items-center justify-center flex-shrink-0 transition-colors active:scale-95" aria-label="Позвонить в отдел продаж">
-        <svg class="w-5 h-5 text-amber-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
-        </svg>
-        <span class="text-[9px] font-bold text-slate-600 mt-0.5 leading-none">Звонок</span>
-      </a>
-
-      <!-- WhatsApp Direct Chat Button -->
-      <a href="https://wa.me/${c.phoneMobileDigits.replace('+', '')}?text=${encodeURIComponent('Здравствуйте! Интересует расчет металлообработки на заводе Уралгиб.')}" target="_blank" rel="noopener" class="w-12 h-12 rounded-xl bg-emerald-500 hover:bg-emerald-600 text-white flex flex-col items-center justify-center flex-shrink-0 shadow-sm transition-colors active:scale-95" aria-label="Написать в WhatsApp">
-        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-          <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2Z"/>
-        </svg>
-        <span class="text-[9px] font-bold text-white mt-0.5 leading-none">WhatsApp</span>
-      </a>
-
-      <!-- Big Primary CTA: "Рассчитать заказ онлайн" -->
-      <button type="button" data-open-modal="quote-modal" class="flex-1 h-12 rounded-xl bg-amber-500 hover:bg-amber-600 text-slate-950 font-black text-xs sm:text-sm shadow-md transition-all active:scale-95 flex items-center justify-center space-x-2 px-3 whitespace-nowrap">
+  <div class="lg:hidden fixed bottom-0 left-0 right-0 z-40 bg-white/95 backdrop-blur-md border-t border-slate-200 px-4 pt-3 pb-5 sm:pb-6 shadow-2xl safe-area-bottom">
+    <div class="max-w-md mx-auto">
+      <!-- Full-Width Primary CTA: "Рассчитать заказ онлайн" -->
+      <button type="button" data-open-modal="quote-modal" class="w-full h-13 py-3 rounded-xl bg-amber-500 hover:bg-amber-600 text-slate-950 font-black text-sm shadow-md transition-all active:scale-[0.98] flex items-center justify-center space-x-2 px-4 whitespace-nowrap">
         <svg class="w-5 h-5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z"/>
         </svg>
         <span>Рассчитать заказ онлайн</span>
       </button>
-
     </div>
   </div>
 
