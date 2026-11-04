@@ -125,3 +125,9 @@ input[type=range]::-webkit-slider-runnable-track {
   animation: laser-glow 2s infinite ease-in-out;
 }
 
+/* iOS Safe Area for bottom fixed app bar */
+.safe-area-bottom {
+  padding-bottom: calc(0.5rem + env(safe-area-inset-bottom, 0px));
+}
+
+

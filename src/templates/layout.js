@@ -60,10 +60,10 @@ function renderLayout(page, contentHtml, siteData, relPrefix) {
   };
 
   return `<!DOCTYPE html>
-<html lang="ru" class="scroll-smooth">
+<html lang="ru" class="scroll-smooth overflow-x-hidden">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
   <title>${page.title}</title>
   <meta name="description" content="${page.description}">
   <link rel="canonical" href="https://uralgib.ru${page.url}">
@@ -95,7 +95,7 @@ function renderLayout(page, contentHtml, siteData, relPrefix) {
   ${JSON.stringify(breadcrumbsSchema)}
   </script>
 </head>
-<body class="bg-slate-50 text-slate-800 antialiased font-sans flex flex-col min-h-screen">
+<body class="bg-slate-50 text-slate-800 antialiased font-sans flex flex-col min-h-screen pb-20 lg:pb-0 overflow-x-hidden">
   
   ${renderHeader(siteData, relPrefix, page.url)}
 

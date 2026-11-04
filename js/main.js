@@ -749,21 +749,24 @@
 
   // Floating Actions & Scroll-to-Top
   function initFloatingActions() {
-    const backToTopBtn = document.getElementById('back-to-top-btn');
+    const btns = document.querySelectorAll('#back-to-top-btn, #mobile-back-to-top');
 
     window.addEventListener('scroll', () => {
-      if (window.scrollY > 400) {
-        if (backToTopBtn) backToTopBtn.classList.remove('opacity-0', 'pointer-events-none');
-      } else {
-        if (backToTopBtn) backToTopBtn.classList.add('opacity-0', 'pointer-events-none');
-      }
-    });
+      const show = window.scrollY > 400;
+      btns.forEach(b => {
+        if (show) {
+          b.classList.remove('opacity-0', 'pointer-events-none');
+        } else {
+          b.classList.add('opacity-0', 'pointer-events-none');
+        }
+      });
+    }, { passive: true });
 
-    if (backToTopBtn) {
-      backToTopBtn.addEventListener('click', () => {
+    btns.forEach(b => {
+      b.addEventListener('click', () => {
         window.scrollTo({ top: 0, behavior: 'smooth' });
       });
-    }
+    });
   }
 
   // Form Submission Handling

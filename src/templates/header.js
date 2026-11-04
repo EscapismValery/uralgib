@@ -30,17 +30,17 @@ function renderHeader(data, relPrefix, currentUrl) {
 
   return `
   <!-- Top Bar (Clean, informative, carries phone numbers, hours, location) -->
-  <div class="bg-slate-100 text-slate-600 text-xs border-b border-slate-200 relative z-50">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-10 flex items-center justify-between">
+  <div class="bg-slate-100 text-slate-600 text-xs border-b border-slate-200 relative z-30">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-9 sm:h-10 flex items-center justify-between overflow-hidden">
       
       <!-- Left: Location & Hours -->
-      <div class="flex items-center space-x-4 lg:space-x-6">
-        <div class="flex items-center space-x-1.5 text-slate-700">
+      <div class="flex items-center space-x-2 sm:space-x-4 lg:space-x-6 min-w-0 mr-2">
+        <div class="flex items-center space-x-1.5 text-slate-700 min-w-0">
           <svg class="w-3.5 h-3.5 text-amber-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
           </svg>
-          <span class="truncate font-medium">${c.locationShort}</span>
+          <span class="truncate font-medium text-[11px] sm:text-xs">г. Берёзовский, ул. Орджоникидзе 19 Б (15 мин от ЕКАД)</span>
         </div>
         <div class="hidden md:flex items-center space-x-1.5 text-slate-500">
           <svg class="w-3.5 h-3.5 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -51,7 +51,7 @@ function renderHeader(data, relPrefix, currentUrl) {
       </div>
 
       <!-- Right: Direct Phone Numbers & Messengers -->
-      <div class="flex items-center space-x-4 lg:space-x-6">
+      <div class="flex items-center space-x-3 sm:space-x-4 lg:space-x-6 flex-shrink-0">
         <a href="mailto:${c.email}" class="hidden xl:inline-flex items-center space-x-1 text-slate-600 hover:text-slate-900 transition-colors">
           <svg class="w-3.5 h-3.5 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
@@ -80,17 +80,17 @@ function renderHeader(data, relPrefix, currentUrl) {
     </div>
   </div>
 
-  <!-- Main Navigation Bar (SOLID OPAQUE WHITE, No Margin between items) -->
+  <!-- Main Navigation Bar (SOLID OPAQUE WHITE, No Horizontal Scroll on Mobile) -->
   <header class="sticky top-0 z-40 bg-white border-b border-slate-200 shadow-md">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="flex items-center justify-between h-18 py-3">
+      <div class="flex items-center justify-between h-16 sm:h-18 py-2.5 sm:py-3">
         
-        <!-- Clean Typographic Logo (No icon box, no 6kW badge) -->
-        <a href="${r('/')}" class="flex flex-col flex-shrink-0 group focus:outline-none" aria-label="ООО Уралгиб на Главную">
-          <span class="text-2xl sm:text-[26px] font-black tracking-tight text-slate-900 group-hover:text-amber-600 transition-colors leading-none">
+        <!-- Clean Typographic Logo -->
+        <a href="${r('/')}" class="flex flex-col flex-shrink-0 group focus:outline-none min-w-0 mr-2" aria-label="ООО Уралгиб на Главную">
+          <span class="text-xl sm:text-2xl lg:text-[26px] font-black tracking-tight text-slate-900 group-hover:text-amber-600 transition-colors leading-none">
             УРАЛГИБ
           </span>
-          <span class="text-[11px] font-semibold text-slate-500 tracking-normal mt-1">
+          <span class="text-[10px] sm:text-[11px] font-semibold text-slate-500 tracking-normal mt-1 truncate">
             Обработка листового металлопроката
           </span>
         </a>
@@ -171,22 +171,36 @@ function renderHeader(data, relPrefix, currentUrl) {
           </a>
         </nav>
 
-        <!-- Right Side: CTA Button Only (No phone, no wrap) -->
-        <div class="flex items-center space-x-3">
-          <button type="button" data-open-modal="quote-modal" class="inline-flex items-center justify-center px-4 py-2 sm:px-5 sm:py-2.5 rounded-lg font-bold text-xs sm:text-sm text-slate-950 bg-amber-500 hover:bg-amber-600 shadow-sm transition-all duration-150 transform active:scale-95 whitespace-nowrap">
+        <!-- Right Side: Desktop CTA + Mobile Phone + Mobile Hamburger -->
+        <div class="flex items-center space-x-2 sm:space-x-3 flex-shrink-0">
+          
+          <!-- Desktop CTA Button (Hidden on Mobile < lg) -->
+          <button type="button" data-open-modal="quote-modal" class="hidden lg:inline-flex items-center justify-center px-5 py-2.5 rounded-lg font-bold text-sm text-slate-950 bg-amber-500 hover:bg-amber-600 shadow-sm transition-all duration-150 transform active:scale-95 whitespace-nowrap">
             <svg class="w-4 h-4 mr-1.5 text-slate-950 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z"/>
             </svg>
             Рассчитать заказ
           </button>
 
+          <!-- Mobile Direct Call Icon (Visible on Mobile < lg) -->
+          <a href="tel:${c.phoneMainDigits}" class="lg:hidden w-10 h-10 rounded-xl bg-amber-50 hover:bg-amber-100 border border-amber-200 text-amber-700 flex items-center justify-center transition-colors active:scale-95 flex-shrink-0" aria-label="Позвонить в отдел продаж">
+            <svg class="w-5 h-5 text-amber-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+            </svg>
+          </a>
+
           <!-- Mobile Hamburger Toggle -->
-          <button type="button" id="mobile-menu-btn" class="lg:hidden p-2 rounded-lg text-slate-700 hover:text-slate-900 hover:bg-slate-100 focus:outline-none" aria-label="Открыть мобильное меню">
+          <button type="button" id="mobile-menu-btn" class="lg:hidden w-10 h-10 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-800 flex items-center justify-center focus:outline-none transition-colors active:scale-95 flex-shrink-0" aria-label="Открыть мобильное меню">
             <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
             </svg>
           </button>
+
         </div>
+
+      </div>
+    </div>
+  </header>
 
       </div>
     </div>
